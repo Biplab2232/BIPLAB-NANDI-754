@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css"> <!--link the css page-->
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/add16ce6cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="WhatsApp Image 2022-11-19 at 1.01.03 PM.jpeg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>    <!-- a> tag use for clickabale link-->
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Devloper</p>
+                <h1>Hi,I'm <span>Biplab Nandi</span> </br>From Bankura , West Bengal , India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------ about ------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="WhatsApp Image 2022-11-19 at 1.01.03 PM.jpeg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p></p>
+                    <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('expirianse')">Projects</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Developer</span><br> Designing web App </li>
+                            <li><span>Languages</span><br>Java Script, HTML, CSS, C++, C, Python</li>
+                            <li><span>Libraries & Frameworks</span><br> React, redux, Bootstrap</li>
+                            <li><span>Other</span><br> Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expirianse">
+                        <ul>
+                            <li><span>amazon Clone</span><br> React has been used to build this project </li>
+                            <li><span>Flipkart Clone</span><br>React has been used to build this project</li>
+                            <li><span>My Portfolio Website</span><br>Only HTML, CSS & JavaScript have been used to make this project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>10th - 90.4%</li>
+                            <li><span>2020</span><br>12th - 89.6%</li>
+                            <li><span>2021-2025</span><br> Cgpa 9.7 - B-Tech Computer Science And Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------services -------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>production and Maintenance</h2>
+                    <!-- <p>......</p> -->
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>User Interface and Experience</h2>
+                    <!-- <p>.....</p> -->
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Responsive Disign</h2>
+                    <!-- <p>......</p> -->
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Contact-------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nandi.biplab007@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7679003434</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/biplab-nandi-235550234"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/biplab4240?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Biplab2232"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> Biplab Nandi. Made With <i class="fa-sharp fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+
+</body>
+</html>
